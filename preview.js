@@ -8,12 +8,13 @@
             }
         },
         preview: function(source, options){
-            if(!options.target) options.target = source.dataset.target;
+            if(!source instanceof Element) source = document.querySelector(source);
+            if(!options.target) options.target = source.dataset.preview;
 
             var target = document.querySelector(options.target);
             source.addEventListener("change", function(event){
                 if(this.files.length < 1) return;
-                
+
                 var reader = new FileReader();
                 reader.onloadend = function(data){
                     if(data.target.result) target.src = data.target.result;
