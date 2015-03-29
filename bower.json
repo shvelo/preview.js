@@ -1,0 +1,23 @@
+{
+  "name": "preview.js",
+  "version": "1.0.0",
+  "authors": [
+    "Nick Shvelidze <captain@pirrate.me>"
+  ],
+  "description": "Universal file upload preview",
+  "main": "preview.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "upload"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
