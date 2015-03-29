@@ -29,3 +29,13 @@ You can also use it manually from Javascript:
 ```javascript
 preview("#fileinput", { target: "#preview" });
 ```
+
+### Reference
+
+`data-preview`: selector for the `img`,`video` or `audio` element which will contain the preview.
+
+`preview(source, options)`  
+`source`: The file `input` element (`<input type=file`), can either be a selector(`string`), or an `Element` (can be obtained via `document.querySelector()` or `document.getElementById()`)  
+
+`options`: The options object, currently supported options are:  
+- `target`: selector for the `img`,`video` or `audio` element which will contain the preview.
